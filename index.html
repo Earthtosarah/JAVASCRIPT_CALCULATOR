@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript calculator</title>
+</head>
+<body>
+    <script>
+        //user input prompt
+        let  a = parseFloat(prompt('Enter first number: '));
+        let  b = parseFloat(prompt('Enter second number: '));
+        //operator prompt
+        let operator = prompt('Enter Operator(+,-,*,/): ');
+        let operatorArrays = ['+','-','*','/'];
+        //let result = 0
+        if(isNaN(a) || isNaN(b)){
+            alert('One or both of your input is not a number');
+        }
+        else{
+            if(operator == '+'){
+                result = a + b;
+            }
+            else if(operator == '-'){
+                result = a - b;
+            }
+            else if(operator == '*'){
+                result = a * b;
+            }
+            else if(operator == '/'){
+                result = a / b;
+            }
+            alert(a + operator + b  + "= " + result)
+        }
+    </script>
+</body>
+</html>
